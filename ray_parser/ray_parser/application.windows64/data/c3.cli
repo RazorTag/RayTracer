@@ -1,0 +1,37 @@
+# colored lights
+
+fov 60
+
+# blue background
+
+background 0.2 0.2 1
+
+# three light sources (red, green, blue)
+
+light  3 4  0  .8 .2 .2
+light -3 4  0  .2 .8 .2
+light  0 4 -5  .2 .2 .8
+
+# these two triangles acts as a ground plane
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+
+begin
+vertex -100 -1 -100
+vertex  100 -1 -100
+vertex  100 -1  100
+end
+
+begin
+vertex  100 -1  100
+vertex -100 -1  100
+vertex -100 -1 -100
+end
+
+# shadow-casting sphere
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+sphere  1  0 0.5 -3
+
+write c3.png
+

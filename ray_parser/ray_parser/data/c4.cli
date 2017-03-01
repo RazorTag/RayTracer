@@ -1,0 +1,48 @@
+# several reflective spheres
+
+fov 60
+
+# blue background
+
+background 0.2 0.2 1
+
+# two light sources
+
+light 8 8 3  .7 .7 .7
+light -4 2 0  .3 .3 .3
+
+# these two triangles acts as a ground plane
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+
+begin
+vertex -100 -1 -100
+vertex  100 -1 -100
+vertex  100 -1  100
+end
+
+begin
+vertex  100 -1  100
+vertex -100 -1  100
+vertex -100 -1 -100
+end
+
+# reflective spheres
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 1  1 0 -5
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 1  -2 0 -7
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.3  0 -0.7 -2
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.4  1 -0.6 -3
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.5  -0.7 -0.5 -3
+
+write c4.png
+

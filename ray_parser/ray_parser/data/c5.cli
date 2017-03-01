@@ -1,0 +1,22 @@
+# four reflective spheres
+
+fov 60
+
+# blue background
+
+background 0.2 0.2 1
+
+# one light source
+
+light 0.4 0 0  .5 .5 .5
+
+# four reflective spheres
+
+surface  .7 .7 .7  0 0 0  0 0 0  20 0.7
+
+sphere 1.41421356   1  1 -1
+sphere 1.41421356  -1 -1 -1
+sphere 1.41421356   1 -1  1
+sphere 1.41421356  -1  1  1
+
+write c5.png

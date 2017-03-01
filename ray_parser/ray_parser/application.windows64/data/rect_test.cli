@@ -1,0 +1,14 @@
+# this is a file containing test commands for the "irect" program
+
+# first a white square
+
+color 1 1 1
+rect 150 150 200 200
+
+# now a blue rectangle
+
+color .2 .2 .8
+rect 10 10 100 30
+
+write rect.png
+

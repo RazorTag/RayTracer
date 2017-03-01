@@ -1,0 +1,143 @@
+# colored lights
+
+fov 60
+
+# blue background
+
+background 0.2 0.2 1
+
+# one light
+
+light 4 4 8  .7 .7 .7
+
+# sphere
+
+surface  .8 .2 .2  .3 .1 .1  0 0 0  1  0
+sphere  .87  0 0 -3
+
+# icosahedron
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+
+begin
+vertex 0.525731 0.850651 -3
+vertex 0.850651 0 -3.525731
+vertex 0.850651 0 -2.474269
+end
+
+begin
+vertex 0.850651 0 -3.525731
+vertex 0.525731 -0.850651 -3
+vertex 0.850651 0 -2.474269
+end
+
+begin
+vertex -0.525731 0.850651 -3
+vertex -0.850651 0 -2.474269
+vertex -0.850651 0 -3.525731
+end
+
+begin
+vertex -0.525731 -0.850651 -3
+vertex -0.850651 0 -3.525731
+vertex -0.850651 0 -2.474269
+end
+
+begin
+vertex 0 0.525731 -2.149349
+vertex -0.525731 0.850651 -3
+vertex 0.525731 0.850651 -3
+end
+
+begin
+vertex 0 0.525731 -3.850651
+vertex 0.525731 0.850651 -3
+vertex -0.525731 0.850651 -3
+end
+
+begin
+vertex 0.850651 0 -3.525731
+vertex 0 0.525731 -3.850651
+vertex 0 -0.525731 -3.850651
+end
+
+begin
+vertex -0.850651 0 -3.525731
+vertex 0 -0.525731 -3.850651
+vertex 0 0.525731 -3.850651
+end
+
+begin
+vertex 0 -0.525731 -3.850651
+vertex -0.525731 -0.850651 -3
+vertex 0.525731 -0.850651 -3
+end
+
+begin
+vertex 0 -0.525731 -2.149349
+vertex 0.525731 -0.850651 -3
+vertex -0.525731 -0.850651 -3
+end
+
+begin
+vertex 0.850651 0 -2.474269
+vertex 0 -0.525731 -2.149349
+vertex 0 0.525731 -2.149349
+end
+
+begin
+vertex -0.850651 0 -2.474269
+vertex 0 0.525731 -2.149349
+vertex 0 -0.525731 -2.149349
+end
+
+begin
+vertex 0 0.525731 -3.850651
+vertex 0.850651 0 -3.525731
+vertex 0.525731 0.850651 -3
+end
+
+begin
+vertex 0 0.525731 -2.149349
+vertex 0.525731 0.850651 -3
+vertex 0.850651 0 -2.474269
+end
+
+begin
+vertex 0 0.525731 -3.850651
+vertex -0.525731 0.850651 -3
+vertex -0.850651 0 -3.525731
+end
+
+begin
+vertex 0 0.525731 -2.149349
+vertex -0.850651 0 -2.474269
+vertex -0.525731 0.850651 -3
+end
+
+begin
+vertex 0 -0.525731 -3.850651
+vertex 0.525731 -0.850651 -3
+vertex 0.850651 0 -3.525731
+end
+
+begin
+vertex 0 -0.525731 -2.149349
+vertex 0.850651 0 -2.474269
+vertex 0.525731 -0.850651 -3
+end
+
+begin
+vertex -0.525731 -0.850651 -3
+vertex 0 -0.525731 -3.850651
+vertex -0.850651 0 -3.525731
+end
+
+begin
+vertex 0 -0.525731 -2.149349
+vertex -0.525731 -0.850651 -3
+vertex -0.850651 0 -2.474269
+end
+
+write c2.png
+
